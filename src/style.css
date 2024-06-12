@@ -1,0 +1,11 @@
+.node__item {}
+
+.node__item--parent {
+    font-weight: bold;
+}
+
+.node__item--content {}
+
+.node__item--parent:hover {
+    cursor: pointer;
+}

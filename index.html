@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./src/main.js"></script>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<script>
+    $(document).ready(function () {
+        InitializeNodeItens("closed")
+    })
+</script>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>item</th>
+                <th>desc</th>
+                <th>Dt.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-node-item="1"  class="node__item node__item--parent">
+                <td>1</td>
+                <td>Conteudo 1</td>
+                <td>06/06/2024</td>
+            </tr>
+            <tr data-node-item="2"  data-node-parent="1"  class="node__item node__item--parent"> <!-- data-node-status="closed" -->
+                <td>1.1</td>
+                <td>Conteudo 1.1</td>
+                <td>06/06/2024</td>
+            </tr>
+            <tr data-node-item="3" data-node-parent="2"  class="node__item">
+                <td>1.1.1</td>
+                <td>Conteudo 1.1.1</td>
+                <td>06/06/2024</td>
+            </tr>
+            <tr data-node-item="4" data-node-parent="2"  class="node__item">
+                <td>1.1.2</td>
+                <td>Conteudo 1.1.2</td>
+                <td>06/06/2024</td>
+            </tr>
+            <tr data-node-item="5" data-node-parent="1"  class="node__item node__item--parent">
+                <td>1.2</td>
+                <td>Conteudo 1.2</td>
+                <td>06/06/2024</td>
+            </tr>
+            <tr data-node-item="6" data-node-parent="5"  class="node__item">
+                <td>1.2.1</td>
+                <td>Conteudo 1.2.1</td>
+                <td>06/06/2024</td>
+            </tr>
+            
+            
+        </tbody>
+    </table>
+    <!-- https://getbootstrap.com/docs/5.1/components/accordion/ -->
+</body>
+
+</html>
